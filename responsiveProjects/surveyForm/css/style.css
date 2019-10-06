@@ -1,7 +1,133 @@
 body {
+	margin: 10px 20px;
+
+	background-color: #a9d7d1;
+
 	font-family: 'Raleway', Helvetica, sans-serif;
+	text-align: center;
+	color: #000000;
 }
 
-h1 {
-	color: green;
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 25px;
+
+	border-radius: 5px;
+	background-color: #fafafa;
+}
+
+div {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 657px) {
+	div {
+		flex-direction: column;
+	}
+}
+
+label,
+p {
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: calc(50% - 30px);
+	padding-right: 30px;
+
+	text-align: right;
+}
+
+@media (max-width: 657px) {
+	label,
+	p {
+		justify-content: flex-start;
+		text-align: left;
+		margin: 0 0 10px 0;
+	}
+}
+
+#description {
+	display: block;
+	margin-bottom: 20px;
+
+	text-align: center;
+}
+
+.name input,
+.email input,
+.age input {
+	width: 300px;
+
+	text-indent: 5px;
+}
+
+@media (max-width: 657px) {
+	.name input,
+	.email input,
+	.age input {
+		width: auto;
+		max-width: 300px;
+	}
+}
+
+select {
+	height: 40px;
+	width: 150px;
+}
+
+.rating,
+.weaknesses {
+	margin-bottom: 10px;
+}
+
+.user-ratings,
+.project-weaknesses {
+	margin-bottom: 0;
+}
+
+.rating div,
+.weaknesses div {
+	display: block;
+}
+
+.user-ratings label,
+.project-weaknesses label {
+	display: block;
+	min-width: 100px;
+	margin-bottom: 15px;
+
+	text-align: left;
+}
+
+.user-rating,
+.project-weakness {
+	margin-right: 10px;
+}
+
+textarea {
+	width: 300px;
+	height: 200px;
+	resize: none;
+}
+
+@media (max-width: 657px) {
+	textarea {
+		width: auto;
+		max-width: 300px;
+	}
+}
+
+#submit {
+	width: 96px;
+	height: 40px;
+	margin: 0 auto;
+
+	border: none;
+	border-radius: 5px;
+	background-color: #59ace0;
+
+	color: white;
 }
