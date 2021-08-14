@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Survey form</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey form</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-		<h1 id="title">Survey form</h1>
+    <h1 id="title">Survey form</h1>
 
-		<form id="survey-form" action="#" method="POST">
+    <form id="survey-form" action="#" method="POST">
 
-			<p id="description">Let us know how we can improve freeCodeCamp</p>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
 
-			<div class="name">
-				<label id="name-label" for="name">* Name:</label>
-				<input id="name" name="name" type="text" maxlength="20" placeholder="Enter your name" required>
-			</div>
+      <div class="name">
+        <label id="name-label" for="name">* Name:</label>
+        <input id="name" name="name" type="text" maxlength="20" placeholder="Enter your name" required>
+      </div>
 
-			<div class="email">
-				<label id="email-label" for="email">* Email:</label>
-				<input id="email" name="email" type="email" maxlength="20" placeholder="Enter your Email" required>
-			</div>
+      <div class="email">
+        <label id="email-label" for="email">* Email:</label>
+        <input id="email" name="email" type="email" maxlength="20" placeholder="Enter your Email" required>
+      </div>
 
-			<div class="age">
-				<label id="number-label" for="number">Age:</label>
-				<input id="number" name="age" type="number" min="5" max="125" placeholder="Age">
-			</div>
+      <div class="age">
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" name="age" type="number" min="5" max="125" placeholder="Age">
+      </div>
 
-			<div class="role">
-				<label for="dropdown">Which option best describes your current role?</label>
-				<select id="dropdown" name="role" size="1">
-					<option disabled>Select an option</option>
-					<option value="Student" selected>Student</option>
-					<option value="Full Time Job">Full Time Job</option>
-					<option value="Full Timacere Learner">Full Time Learner</option>
-					<option value="Prefer not to say">Prefer not to say</option>
-					<option value="Other">Other</option>
-				</select>
-			</div>
+      <div class="role">
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" name="role" size="1">
+          <option disabled>Select an option</option>
+          <option value="Student" selected>Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Timacere Learner">Full Time Learner</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
 
-			<div class="rating">
-				<p>How likely is that you would recommend freeCodeCamp to a friend</p>
-				<div class="user-ratings">
-					<label><input class="user-rating" name="user-rating" type="radio" value="Definitely">Definitely</label>
-					<label><input class="user-rating" name="user-rating" type="radio" value="Maybe">Maybe</label>
-					<label><input class="user-rating" name="user-rating" type="radio" value="Not sure">Not sure</label>
-				</div>
-			</div>
+      <div class="rating">
+        <p>How likely is that you would recommend freeCodeCamp to a friend</p>
+        <div class="user-ratings">
+          <label><input class="user-rating" name="user-rating" type="radio" value="Definitely">Definitely</label>
+          <label><input class="user-rating" name="user-rating" type="radio" value="Maybe">Maybe</label>
+          <label><input class="user-rating" name="user-rating" type="radio" value="Not sure">Not sure</label>
+        </div>
+      </div>
 
-			<div class="preference">
-				<label for="dropdown">What do you like most in FCC:</label>
-				<select name="preference" size="1">
-					<option disabled selected>Select an option</option>
-					<option value="Challenges">Challenges</option>
-					<option value="Projects">Projects</option>
-					<option value="Community">Community</option>
-					<option value="Open Source">Open Source</option>
-				</select>
-			</div>
+      <div class="preference">
+        <label for="dropdown">What do you like most in FCC:</label>
+        <select name="preference" size="1">
+          <option disabled selected>Select an option</option>
+          <option value="Challenges">Challenges</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+        </select>
+      </div>
 
-			<div class="weaknesses">
-				<p>
-					Things that should be improved in the future<br>
-					(Check all that apply):
-				</p>
-				<div class="project-weaknesses">
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Front-end Projects">Front-end Projects</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Back-end Projects">Back-end Projects</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Data Visualization">Data Visualization</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Challenges">Challenges</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Open Source Community">Open Source Community</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Gitter help rooms">Gitter help rooms</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Videos">Videos</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="City Meetups">City Meetups</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Wiki">Wiki</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Forum">Forum</label>
-					<label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Additional Courses">Additional Courses</label>
-				</div>
-			</div>
+      <div class="weaknesses">
+        <p>
+          Things that should be improved in the future<br>
+          (Check all that apply):
+        </p>
+        <div class="project-weaknesses">
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Front-end Projects">Front-end Projects</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Back-end Projects">Back-end Projects</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Data Visualization">Data Visualization</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Challenges">Challenges</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Open Source Community">Open Source Community</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Gitter help rooms">Gitter help rooms</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Videos">Videos</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="City Meetups">City Meetups</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Wiki">Wiki</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Forum">Forum</label>
+          <label><input class="project-weakness" name="project-weaknesses" type="checkbox" value="Additional Courses">Additional Courses</label>
+        </div>
+      </div>
 
-			<div class="comment">
-				<p>Any Comments or Suggestions?</p>
-				<textarea maxlength="1000" placeholder="Enter your comment here... (maximum 1000 characters)"></textarea>
-			</div>
+      <div class="comment">
+        <p>Any Comments or Suggestions?</p>
+        <textarea maxlength="1000" placeholder="Enter your comment here... (maximum 1000 characters)"></textarea>
+      </div>
 
-			<button id="submit" type="submit">Submit</button>
+      <button id="submit" type="submit">Submit</button>
 
-		</form>
+    </form>
 
-	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

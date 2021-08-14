@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product landing page</title>
+  <script src="https://use.fontawesome.com/b39b9447ed.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav-bar" id="nav-bar">
+      <div class="logo">
+        <a href="#"><img class="header-img" id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo"></a>
+      </div>
+
+      <ul class="nav-menu">
+        <li>
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#how-it-works">How It Works</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="header-title">Handcrafted, home-made masterpieces</h1>
+
+    <form class="form" id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <div class="form-row">
+        <input class="email" id="email" type="email" placeholder="Enter your email address" name="email" required>
+      </div>
+      <div class="form-row">
+        <input class="submit" id="submit" type="submit" value="Get discount">
+      </div>
+    </form>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <section id="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fa fa-3x fa-fire" aria-hidden="true"></i>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Premium Materials</h3>
+            <p class="feature-description">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Fast Shipping</h3>
+            <p class="feature-description">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Quality Assurance</h3>
+            <p class="feature-description">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <h2 hidden>The U.S. Army Field Band Trombone Ensemble performs Hector Berlioz's "Roman Carnival Overture,"</h2>
+        <iframe class="video" id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <ul class="items">
+          <li class="item-card">
+            <h3 class="item-name">Tenor trombone</h3>
+            <span class="item-price">$600</span>
+            <p class="item-description"></p>
+            <ul class="item-options">
+              <li class="item-option">Option 1</li>
+              <li class="item-option">Option 2</li>
+              <li class="item-option">Option 3</li>
+              <li class="item-option">Option 4</li>
+            </ul>
+            <button class="item-button">Select</button>
+          </li>
+
+          <li class="item-card">
+            <h3 class="item-name">Bass trombone</h3>
+            <span class="item-price">$900</span>
+            <p class="item-description"></p>
+            <ul class="item-options">
+              <li class="item-option">Option 1</li>
+              <li class="item-option">Option 2</li>
+              <li class="item-option">Option 3</li>
+              <li class="item-option">Option 4</li>
+            </ul>
+            <button class="item-button">Select</button>
+          </li>
+
+          <li class="item-card">
+            <h3 class="item-name">Valve trombone</h3>
+            <span class="item-price">$1200</span>
+            <p class="item-description"></p>
+            <ul class="item-options">
+              <li class="item-option">Option 1</li>
+              <li class="item-option">Option 2</li>
+              <li class="item-option">Option 3</li>
+              <li class="item-option">Option 4</li>
+            </ul>
+            <button class="item-button">Select</button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <ul class="about-company">
+      <li class="company-link">Privacy</li>
+      <li class="company-link">Terms</li>
+      <li class="company-link">Contact</li>
+    </ul>
+
+    <span class="copyright">Copyright 2016, Original Trombones</span>
+  </footer>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
